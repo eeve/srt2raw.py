@@ -110,7 +110,6 @@ else:
 		w = open(outputPath, 'w', encoding="utf-8")
 		w.write(''.join(lines))
 		w.close()
+		print('Total %d records. writing succeeded!' % len(lines))
 	except:
 		print('ERROR: File writing failed！')
-
-	print('Total %d records. writing succeeded!' % len(lines))
